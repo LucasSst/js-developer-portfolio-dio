@@ -36,23 +36,25 @@
 <body>
     <main class="main">
         <header class="header">
-            <img src="assents/img/img.jpg" alt="foto de Lucas Teixeira" class="photo">
+            <img src="assents/img/user-profile.svg" alt="foto de perfil" id="profile.photo" class="photo">
             
-            <h1 class="title">Olá,<br> eu sou Lucas T Silva</h1>
+            <h1 class="title">Olá,<br> eu sou   <span id="profile.name">name</span>
+            </h1>
     
             <div class="information">
-                <p class="job">Junior Developer</p>
-                <p class="location">Bahia - BR</p>
-                <p class="phone"> <a href="tel:(75) 9 7777-7777">(75) 9 7777-7777</a></p>
-                <p class="email"> 
-                    <a href="mailto:exemplo@mail.com">exemplo@mail.com</a>
+                <p class="job" id="profile.job">job </p>
+                <p class="location" id="profile.location">location</p>
+                <p class="phone"> <a href="" id="profile.phone">phone</a></p>
+                <p class="email">   
+                    <a href="" id="profile.email">email</a>
                 </p>
             </div>
         </header>
         <div class="skills"> 
             
         </div>
-        <section class='acordeon open'>
+        <!-- Habilidades-->
+        <section class='acordeon'>
             <button class="trigger" type="button">
                     <h2>Habilidades</h2>
             </button>
@@ -61,25 +63,16 @@
                 <div class="skills">
                     <section class="tools">
                         <h3>Ferramentas:</h3>
-                        <ul>
-                            <li>
-                                <img src="assents/img/icons/languages/js-icon.svg" alt="javascrit" title="javascrit">
-                            </li>
-
-                            <li>
-                                <img src="assents/img/icons/languages/typescript-icon.svg" alt="typescript" title="typescript">
-                            </li>
+                        <ul id="profile.skills.hardSkills">
+                            
                         </ul>
                     </section>
 
                     <section class="personal">
                         <h3>Pessoal:</h3>
-                        <ul>
-                            <li>Liderança</li>
-                            <li>Facilidade de comunicação</li>
-                            <li>Organização</li>
-                            <li>Flexibilidade</li>
-                            <li>Trabalho em equipe</li>
+                        <ul id="profile.skills.softSkills">
+                            <li>SoftSkills</li>
+                            
                         </ul>
                     </section>
                 </div>
@@ -87,72 +80,42 @@
             </div>
         </section>
 
+        <!-- Idiomas-->
         <section class='acordeon'>
             <button class="trigger" type="button">
                    <h2>Idiomas</h2>
             </button>
             
             <div class="content">
-                <ul class="languages">
-                    <li>Português-Brasil</li>
-                    <li>Inglês</li>
+                <ul class="languages" id="profile-languages">
+                    <li>languages</li>
                 </ul>
             </div>
 
         </section>
 
+        <!-- Portfolio-->
         <section class='acordeon'>
             <button class="trigger" type="button">
                  <h2>Portfólio</h2>   
             </button>
             
             <div class="content">
-                <ul class="portfolio">
-                    <li>
-                        <h3 class="title github">Criando um app de lembrete</h3>
-                        <a href="www.twitter.com" target="_blank">www.twitter.com</a>
-                    </li>
-
-                    <li>
-                        <h3 class="title github">Criando um app de lembrete</h3>
-                        <a href="www.twitter.com" target="_blank">www.twitter.com</a>
-                    </li>
-
-                    <li>
-                        <h3 class="title github">Criando um app de lembrete</h3>
-                        <a href="www.twitter.com" target="_blank">www.twitter.com</a>
-                    </li>
-
-                    <li>
-                        <h3 class="title github">Criando um app de lembrete</h3>
-                        <a href="www.twitter.com" target="_blank">www.twitter.com</a>
-                    </li>
+                <ul class="portfolio" id="profile-portfolio">
+                  
                     
                 </ul>
             </div>
         </section>
 
+        <!--Experiência Profissional-->
         <section class='acordeon'>
             <button class="trigger" type="button">
                     <h2>Experiência Profissional</h2>
             </button>
             
             <div class="content">
-                <ul class="experience">
-                    <li>
-                        <h3 class="title calendario">Front-end Developer / dio-me</h3>
-                        <p class='period'>Jan 2022 - Current</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. </p>
-                    </li>
-
-                    <li>
-                        <h3 class="title calendario">Front-end Developer / dio-me</h3>
-                        <p class='period'>Jan 2022 - Current</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. </p>
-                    </li>
-
-                    
-                    
+                <ul class="experience" id="profile.professionalExperience">   
                 </ul>
             </div>
         </section>
@@ -160,5 +123,7 @@
 
     </main>
     <script src="assents/js/acordeon.js"></script>
+    <script src="assents//js/api.js"></script>
+    <script src="assents/js/main.js"></script>
 </body> 
 </html>
