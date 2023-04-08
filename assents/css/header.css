@@ -60,19 +60,19 @@
 }
 
 .information .job::before{
-    background-image: url('/assents/img/icons/job.svg');
+    background-image: url('../img/icons/job.svg');
 }
 
 .information .location::before{
-    background-image: url('/assents/img/icons/location.svg');
+    background-image: url('../img/icons/location.svg');
 }
 
 .information .email::before{
-    background-image: url('/assents/img/icons/email.svg');
+    background-image: url('../img/icons/email.svg');
 }
 
 .information .phone::before{
-    background-image: url('/assents/img/icons/phone.svg');
+    background-image: url('../img/icons/phone.svg');
 }
 
 @media only screen and (min-width: 768px) {
